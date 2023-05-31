@@ -1,12 +1,12 @@
 function [S, bytes, time] = gsim_GSVD_iter_Q(B,A,kmax,r,QB,QA)
-%gsim_GSVD_iter_acc Computes the accuracy of GSVD in each iteration
+%gsim_GSVD_iter_Q Computes similarity of QA and QA by GSVD
 %   Input: 
 %             A,B: adjacency Matrix
 %             kmax: maximum number of iteratoin
 %             r: the approximate rank
 %             QA,QB: same as the QA,QB used for get ground truth.
 %   Output: 
-%             acc: Accuracy of GSimP in each iteration
+%             S: similaity matrix of QA and QB
 %             bytes: memory usage of GSimP in each iteration
 %             time: running time of GSimP in each iteration
 
