@@ -7,12 +7,12 @@
 
 ## Main:
 (1)Time  
-cd MQ -Time/  
+cd MQ_Time/  
 run main_Time.m  
   
 (2) Memory  
-cd MQ -Time/  
-run main_Time.m  
+cd MQ_Mem/  
+run main_Mem.m  
   
 (3) Accuaracy  
 cd MQ_ACC/  
