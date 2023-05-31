@@ -6,6 +6,16 @@
 - Matlab R2021b
 
 ## Main:
-(3) Accuaracy
-cd MQ_ACC/
-run main_Acc.m
+(1)Time  
+cd MQ -Time/  
+run main_Time.m  
+  
+(2) Memory  
+cd MQ -Time/  
+run main_Time.m  
+  
+(3) Accuaracy  
+cd MQ_ACC/  
+run main_Acc.m  
+
+(4) Test_Example： Experimental verification of Examples 1 and 2 in the paper
