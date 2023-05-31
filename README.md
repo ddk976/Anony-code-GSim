@@ -6,3 +6,6 @@
 - Matlab R2021b
 
 ## Main:
+(3) Accuaracy
+cd MQ_ACC/
+run main_Acc.m
