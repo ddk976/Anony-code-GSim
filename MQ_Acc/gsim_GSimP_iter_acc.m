@@ -9,21 +9,21 @@ function acc = gsim_GSimP_iter_acc(A,B,kmax,truth,QA,QB)
 %   OUtput: 
 %             acc: Accuracy of GSimP in each iteration
 
-    fprintf('\n >> Start gsim_naive_iter\n');
-    acc = zeros(kmax);
+    fprintf('\n >> Start gsim_GSimP_iter_acc\n');
+    acc = zeros(kmax,1);
 
     nb = size(B,1);                 %length of B
     na = size(A,1);                 %length of A
    
-    U = ones(nb,1);                 %initialize   
-    V = ones(na,1);
+    U = ones(na,1);                 %initialize   
+    V = ones(nb,1);
 
     for k = 1:kmax
         
-        U= [B*U B'*U];              %get U,V in this iteration
-        V= [A*V A'*V];
+        U= [A*U A'*U];              %get U,V in this iteration
+        V= [B*V B'*V];
 
-        S = U(QB,:)*(V(QA,:))';     %get similarity matrix
+        S = U(QA,:)*(V(QB,:))';     %get similarity matrix
         
         S1 = S/norm(S, 'fro');      %normalization
 
