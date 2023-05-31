@@ -1,12 +1,12 @@
 function [S, bytes, time] = gsim_GSim_iter_Q(A, B, kmax,QA,QB)
 
-%gsim_GSim_iter_acc Computes the accuracy of GSIM in each iteration
+%gsim_GSim_iter_acc Computes the similarity of QA, QB by GSim
 %   Input: 
 %             A,B: adjacency Matrix
 %             kmax: maximum number of iteratoin
 %             QA,QB: same as the QA,QB used for get ground truth.
 %   Output: 
-%             acc: Accuracy of GSim in each iteration
+%             S: Similarity matrix of QA,QB
 %             bytes: memory usage of GSim in each iteration
 %             time: running time of GSim in each iteration
 fprintf('\n >> Start gsim_naive_iter\n');
